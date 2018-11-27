@@ -1,0 +1,54 @@
+1 
+linha 36 -    u = 0; /* erro semântico: variável não declarada */
+Type error in i at line 41: Declaration Error: it was not declared
+Checking Types...
+Type error in input at line 31: assignment of void return
+Type error in input at line 32: assignment of void return
+
+2
+linha 31 u = output(x); /* erro semântico: valor de retorno de função é void */
+Building Symbol Table...
+Type error in u at line 28: Declaration Error: Already declared.
+Type error in i at line 44: Declaration Error: it was not declared
+Checking Types...
+Type error in output at line 31: assignment of void return
+Type error in input at line 34: assignment of void return
+Type error in input at line 35: assignment of void return
+
+
+3 SINTATICO
+
+4
+30 int u; /* erro semântico - declaração dupla*/  
+Building Symbol Table...
+Type error in u at line 28: Declaration Error: Already declared.
+Type error in u at line 30: Declaration Error: Already declared.
+Type error in i at line 43: Declaration Error: it was not declared
+Checking Types...
+Type error in input at line 33: assignment of void return
+Type error in input at line 34: assignment of void return
+
+5
+linha 29 -    output(gdc(x,y)); /* erro semântico: chamada de função não declarada */
+Type error in i at line 37: Declaration Error: it was not declared
+
+6 OK
+/* gdc com erro semantico - programa sem main */
+
+Type error in u at line 28: Declaration Error: Already declared.
+Type error in i at line 42: Declaration Error: it was not declared
+Declaration Error: main was not declared
+Checking Types...
+Type error in input at line 32: assignment of void return
+Type error in input at line 33: assignment of void return
+
+7 OK **
+linha 26 -    int input; /* erro semantico - nome duplicado com de função */
+
+Type error in input at line 26: Declaration Error: Already declared.
+Type error in u at line 29: Declaration Error: Already declared.
+Type error in i at line 43: Declaration Error: it was not declared
+Checking Types...
+Type error in input at line 33: assignment of void return
+Type error in input at line 34: assignment of void return
+
